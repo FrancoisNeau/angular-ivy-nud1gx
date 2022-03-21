@@ -1,0 +1,8 @@
+<div class="container">
+  <div *ngFor="let module of modules">
+    <div class="title">{{ module.name }}</div>
+    <div>
+      <div *ngFor="let subModule of module.children">{{ subModule }}</div>
+    </div>
+  </div>
+</div>
